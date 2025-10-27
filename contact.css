@@ -1,0 +1,123 @@
+*{
+    padding:0;
+    margin: 0;
+}
+
+
+#head{
+    font-family:cursive;
+    font-size: 30px;
+    
+}
+#head a{
+    text-decoration: none;
+    color: black;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+
+}
+li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+li a{
+    text-decoration: none;
+    color: black;
+}
+li a:hover{color: grey;}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.booking{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    padding-top: 120px;
+}
+
+.form-group{
+    padding: 10px;
+}
+input{padding:5px;}
+
+button:hover{color: red}
+
+ nav ul{
+   display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    display: flex; 
+    width: 100%;
+    justify-content: space-between;
+
+
+} 
+/* 
+footer{
+    
+      color: white;
+      text-align: center;
+      padding: 1em;
+} */
+
+
+
+@media (max-width: 600px) {
+  #head {
+    font-size: 24px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  li {
+    padding: 8px 0;
+  }
+
+  form {
+    width: 90%;
+    padding: 15px;
+  }
+
+  input, textarea {
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 22px;
+    text-align: center;
+    padding: 15px;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
